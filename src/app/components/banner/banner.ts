@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { WelcomeComponent } from "./welcome/welcome.component";
 import { AccountComponent } from "./account/account.component";
 
@@ -12,4 +12,5 @@ import { AccountComponent } from "./account/account.component";
   styleUrl: './banner.css'
 })
 export class Banner {
+  balance = input.required<number>();
 }
