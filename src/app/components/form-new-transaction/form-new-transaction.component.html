@@ -7,8 +7,9 @@
                 <div class="select-wrapper">
                     <select [(ngModel)]="type" name="transaction-type" class="field select-transaction-type" required>
                         <option value="" selected disabled>Selecione o tipo da transação</option>
-                        <option value="deposito">Depósito</option>
-                        <option value="saque">Saque</option>
+                        @for (type of typeTransactionEnum | keyvalue; track type.key) {
+                            <option [value]="type.value">{{ type.value }}</option>
+                        }
                     </select>
                 </div>
             </label>
