@@ -3,4 +3,5 @@
     <app-banner [balance]="balance()"/>
     <app-form-new-transaction (transactionCreate)="processTransaction($event)" />
   </div>
+  <app-extract class="extract" [transactions]="transactions()" />
 </div>

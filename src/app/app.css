@@ -13,3 +13,13 @@
   flex-direction: column;
   gap: 1.5rem;
 }
+
+.extract {
+    flex-basis: 17.625rem;
+}
+
+@media screen and (max-width: 48rem) {
+    .extract {
+        flex-basis: 100%;
+    }
+}
