@@ -111,7 +111,13 @@
             ]
           }
         }
+      },
+      "i18n": {
+        "sourceLocale": "pt"
       }
     }
+  },
+  "cli": {
+    "analytics": "fb478f0f-cb98-43f4-94b0-35675359d251"
   }
 }
